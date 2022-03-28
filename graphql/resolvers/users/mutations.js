@@ -5,7 +5,7 @@ const userMutations = {
     createUser: (_, { user }) => {
         let newUser = new User( user );
         return newUser.save().then(res => {
-            return res
+            return res.populate({path: 'company'})
         }); 
     }
 }
