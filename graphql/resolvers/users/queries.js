@@ -2,6 +2,12 @@ import User from "../../../models/users.js";
 //import Company from "../../../models/companies.js";
 
 const userQueries = {
+    allUsers: async (_, args) => {
+        return User.find().then(res => {
+            return res.map(user => user.populate({path: 'company'}))
+        })
+    },
+
     user: async (_, args) => {
         return User.findById(args.id).then(res => {
             return res.populate({ 

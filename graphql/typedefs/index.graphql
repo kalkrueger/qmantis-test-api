@@ -1,9 +1,13 @@
 type Query {
+    allUsers: [User]
+
     user(id: String!): User
 
     userPurchases(id: String!): User
 
     product(id: String!): Product
+
+    allCompanies: [Company]
 
     company(id: String!): Company
 
