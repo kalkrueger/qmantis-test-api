@@ -1,0 +1,13 @@
+type Purchase {
+    id: String!
+    userId: String!
+    product: Product
+    quantity: Int!
+    price: Int
+}
+
+input PurchaseAddInput {
+    userId: String!
+    product: String!
+    quantity: Int!
+}

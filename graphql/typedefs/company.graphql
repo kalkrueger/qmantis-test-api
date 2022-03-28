@@ -1,0 +1,11 @@
+type Company {
+    id: String!
+    name: String!
+    description: String
+    users: [User]
+}
+
+input CompanyCreateInput {
+    name: String!
+    description: String
+}
