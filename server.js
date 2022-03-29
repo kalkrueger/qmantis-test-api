@@ -6,7 +6,7 @@ import {
   registerLatency,
   responseTime,
   collectData 
-  } from "qmantis-xp";
+  } from "qmantis-express";
 import { graphqlHTTP } from "express-graphql";
 import mongoose from "mongoose";
 import cors from 'cors';

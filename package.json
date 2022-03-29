@@ -21,6 +21,6 @@
     "mongoose": "^6.2.3",
     "nodemon": "^2.0.15",
     "pg-promise": "^10.11.1",
-    "qmantis-xp": "^1.0.0"
+    "qmantis-express": "^1.0.4"
   }
 }
